@@ -40,6 +40,6 @@ if uploaded_file is not None:
     st.write(f"Prediction score: {prediction[0][0]}")
 
     # Evaluate the model on the test set
-    test_loss, test_acc = model.evaluate(np.stack(test_df['image'].values), test_df['gender_label'])
-    st.subheader("Model Evaluation:")
-    st.write(f'Test accuracy: {test_acc}')
+    # test_loss, test_acc = model.evaluate(np.stack(test_df['image'].values), test_df['gender_label'])
+    # st.subheader("Model Evaluation:")
+    # st.write(f'Test accuracy: {test_acc}')
