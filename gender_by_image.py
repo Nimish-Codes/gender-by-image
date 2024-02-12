@@ -5,6 +5,7 @@ import pickle
 import tensorflow
 import keras
 import sklearn
+import pandas
 
 # 'model' and 'test_df' are defined and loaded
 with open('gender_prediction_model.pkl', 'rb') as f:
