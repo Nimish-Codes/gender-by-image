@@ -2,6 +2,9 @@ import streamlit
 import numpy as np
 from PIL import Image
 import pickle
+import tensorflow
+import keras
+import scikit-learn
 
 # 'model' and 'test_df' are defined and loaded
 with open('gender_prediction_model.pkl', 'rb') as f:
