@@ -1,3 +1,7 @@
 streamlit
 pillow
 numpy
+keras
+scikit-learn
+tensorflow
+pandas
