@@ -10,7 +10,7 @@ import pandas
 
 # 'model' and 'test_df' are defined and loaded
 with open('gender_prediction_model.pkl', 'rb') as f:
-    model, test_df = pickle.load(f)
+    model = pickle.load(f)
 
 def main():    
     # Streamlit App
@@ -42,9 +42,9 @@ def main():
         st.write(f"Prediction score: {prediction[0][0]}")
 
         # Evaluate the model on the test set
-        test_loss, test_acc = model.evaluate(np.stack(test_df['image'].values), test_df['gender_label'])
-        st.subheader("Model Evaluation:")
-        st.write(f'Test accuracy: {test_acc}')
+        # test_loss, test_acc = model.evaluate(np.stack(test_df['image'].values), test_df['gender_label'])
+        # st.subheader("Model Evaluation:")
+        # st.write(f'Test accuracy: {test_acc}')
 
 if __name__ == '__main__':
     main()
